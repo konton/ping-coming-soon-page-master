@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+body,html{
+    height: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+body img{
+    width: 7%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+.topic{
+    font-size: 50px;
+    color:  hsl(0, 0%, 59%);
+}
+
+.topic a{
+    font-weight: bold;
+    color: black;
+}
+
+.subtopic{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    font-size: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form{
+    width: 45%;
+}
+form input{
+    padding: 15px;
+    width: 90%;
+    border-radius: 30px;
+    border-color: hsl(0, 0%, 59%);
+}
+
+form input:hover{
+    border-color: hsl(0, 0%, 59%);
+
+}
+::-webkit-input-placeholder {
+    color: hsl(0, 0%, 59%);
+    font-size: 17px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin-left: 1vw;
+    border-radius: 30px;
+    padding: 5px 60px 5px 60px;
+    height: 52px;
+    color: white;
+    font-size: 17px;
+    background-color: hsl(223, 87%, 63%);
+    border-width: 0;
+}
+
+button:hover{
+    background-color: hsl(223, 100%, 88%);
+}
+.dashboard{
+    width: 30%;
+}
+
+.contact{
+    display: flex;
+}
+
+.fa{
+    padding: 5px;
+    width: 20px;
+    text-decoration: none;
+    margin: 5px 2px;
+    text-align: center;
+    color: hsl(223, 87%, 63%);
+    background: #FFFF;
+    border-radius: 50%; 
+}
+
+small{
+    color: hsl(354, 100%, 66%);
+    margin-top: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width:375px) {
+
+body img{
+    width: 20%;
+}
+
+.topic{
+    text-align: center;
+    font-size: 25px;
+}
+form{
+    flex-direction: column;
+    width: 80%;
+}
+
+.input{
+    flex-direction: column;
+}
+
+.box{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.dashboard{
+    width: 90%;
+}
+
+.subtopic{
+    font-size: 15px;
+}
+}
